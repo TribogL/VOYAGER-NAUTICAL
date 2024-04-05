@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+    --paredFondo: #F9FADE;
+    --textoNav: #ffffff;
+    --texto: rgba(0, 0, 0, 0.504);
+    --bienvenida: #DBFFD3;
+    --navios: #7a0e0e;
+    --paredbody: #e0e9f384;
+    --color-ilumi: #13ffe0;
+    --sombra: #7f7b7b;
+    --borders: #d0b44d;
+    --colortextfrom: #181818;
+    --antibarra: #181818;
+    --hr:#0b6ed8;
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+html{
+    scroll-behavior: smooth;
+}
+div[id] {
+    scroll-margin-top: 100px;
+}
+article[id]{
+    scroll-margin-top: 217px;
+}
+section[id]{
+    scroll-margin-top: 100px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    border-top: 5px solid var(--borders) ;
+    border-bottom: 5px solid var(--borders);
+}
+hr{
+    height: 5px;
+    background-color: var(--hr);
+}
+/* id */
+#inicio{
+    height: 187vh;
+}
+#productos{
+    height: 187vh;
+}
+#veleros{
+    height: 167vh;
+}
+#cargueros{
+    height: 180vh;
+}
+#pesqueros{
+    height: 187vh;
+}
+#sobre-nosotros{
+    height: 187vh;
+}
+#contacto{
+    height: 70vh;
+}
+/* Estilos del header */
+.contenedor-barra-total{
+    background-image: url(../../public/img/Tugboat-container-ship.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100vh;
+    max-height: 100%;
+    max-width: 100%;
+}
+.contenedor-barra{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 90%;
+    gap: 16%   ;
+    width: 100%;
+    background-color: var(--texto);
+}
+.contenedor-barra a{
+    color: var(--textoNav);
+}
+.contenedor-barra a :hover{
+    color: var(--color-ilumi);
+}
+.contenedor-logo{
+    display: inherit;
+    align-items: center;
+    color: var(--textoNav);
+    margin-right: 19%;
+}
+.contenedor-logo h1{
+    text-align: center;
+    font-size: 31px;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+}
+.nave-barra{
+    display: inherit;
+    width: 60vh;
+    font-size: 18px;
+}
+.nave-barra a{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left:40px;
+    padding-right: 40px;
+}
+.barra-buscadora{
+    font-size: 0px;
+    margin-right: 50px;
+}
+/* estilos del main */
+.menu-inicio{
+    border: 10px solid var(--borders);
+    align-items: center;
+    background-color: var(--antibarra);
+}
+.red-nosotros{
+    background-color: var(--paredFondo);
+}
+.menu-productos{
+    text-align: center;
+    font-size: 40px;
+}
+.contenedor-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width:80% ;
+    height: auto;
+}
+.contenedor-productos h3{
+    text-align: center;
+    font-size: 70px;
+    margin-left: 400px;
+    margin-bottom: 40px;
+}
+.productos{
+    margin-bottom: 0px;
+}
+.parrafo{
+    width: 900px;
+}
+.productos{
+    max-height: 40vh;
+    max-width: 40vh;
+}
+/* Section de veleros */
+.contenedor-veleros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+    margin-left: 400px;
+    border-bottom: 7px solid var(--navios);
+}
+/* sección de cargueros */
+.contenedor-cargueros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+    margin-left: 400px;
+    padding-left: 4px;
+    border-bottom: 7px solid var(--navios);
+}
+/* sección de pesqueros */
+.contenedor-pesqueros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+    margin-left: 400px;
+    border-bottom: 7px solid var(--navios);
+}
+/* Sección sobre VOYAGER */
+.contenedor-voyager{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+    margin-left: 400px;
+    background-color: var(--paredbody);
+    margin-bottom: 60px;
+}
+.contenedor-voyager p{
+    font-size: 30px;
+    text-align: center;
+}
+/* Footer */
+.contenedor-antibarra{
+    background-color: var(--antibarra);
+}
