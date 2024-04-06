@@ -20,7 +20,7 @@
 <body>
     <!--Parte del header que contiene la barra de navegación y el logo-->
     <header>
-
+        
         <section class="contenedor-barra-total">
 
             <article class="contenedor-barra">
@@ -37,18 +37,18 @@
                     </div>
                 </div>
                 <div class="nave-barra">
-                    <a href="#inicio">inico
+                    <a href="#">inico
                         <i class="bi bi-compass"></i>
                     </a>
-                    <a href="#productos">productos
+                    <a href="#mercado">productos
                         <i class="bi bi-shop"></i>
                     </a>
-                    <a href="#">alquiler
+                    <a href="#sobre-nosotros">sobre VN
 
                     </a>
-                    <a href="https://pa1.aminoapps.com/6264/56ee705b7e80cb5d49ce3e31f6614554c6b3f622_00.gif">
-                        buscador
-                        <i class="bi bi-search"></i>
+                    <a href="#contacto">
+                        contactanos
+                        <i class="bi bi-file-earmark-person-fill"></i>
                     </a>
                 </div>
             </article>
@@ -60,50 +60,33 @@
     <!--Parte del main que contiene los productos y la parte de introduccion sobre la empresa-->
 
     <main>
-        <section>
-            <article class="menu-inicio"><!--menu de inicio en el cual se podra navegar por la pagina con el uso de anchores-->
-                
-                <div id="inicio">
-                    
-                    <div>
-
-
-                        <a href="#sobre-nosotros">
-                            <img class="red-nosotros"
-                                src="./public/img/VOYAGER NAUTICAL Logo - Watermark (Large) - 600x600.png"
-                                alt="VOYAGER NAUTICAL">
-                        </a>
-                    </div>
-                </div>
-
-            </article>
-
-        </section>
-
-        <section class="menu-productos">
-
-            <div id="productos">
-
-        
+        <!--seccion encargada de devolver al usuario o al mercado -->
+        <section class="mercado">
+            <div id="mercado">
                 <h2>Nuestros Navios</h2>
-
-                <div>
-
-                    <a href="#veleros">Veleros</a>
-                    <a href="#cargueros">Cargueros</a>
-                    <a href="#pesqueros">Pesqueros</a>
-
-                </div>
-
             </div>
+            <div class="menu-mercado">
+                <a href="#veleros">veleros
 
+                </a>
+                <a href="#cargueros">cargueros
+
+                </a>
+                <a href="#pesqueros">pesqueros
+
+                </a>
+            </div>
         </section>
 
-        <hr>
-
+        <!--seccion encargada de mostrar los veleros de la empresa con el uso de divs y figures-->
         <section class="contenedor-productos">
-            <h3>veleros</h3>
 
+
+            <article>
+                <div>
+                    <h3>veleros</h3>
+                </div>
+            </article>
             <article id="veleros">
 
 
@@ -205,7 +188,7 @@
         </section>
 
         <hr>
-
+        <!--seccion encargada de mostrar los barcos cargueros de la empresa con el uso de divs y figures--->
         <section id="cargueros">
 
             <article class="contenedor-productos">
@@ -319,7 +302,7 @@
         </section>
 
         <hr>
-
+        <!--seccion encargada de mostrar los barcos pesqueros de la empresa con el uso de divs y figures--->
         <section id="pesqueros">
 
             <article class="contenedor-productos">
@@ -427,12 +410,10 @@
 
         </section>
 
-        <br>
-        <br>
         <hr>
-        <br>
-        <br>
 
+        <!--seccion encargada de mostrar la historia de la empresa y un video de demostracion de los productos 
+            de la empresa con el uso de un iframe con el uso de un div , de un parrafo y un iframe --->
         <section class="contenedor-productos">
 
             <article id="sobre-nosotros">
@@ -448,6 +429,15 @@
                         satisfacción del cliente, garantizando que cada embarcación que sale de nuestras instalaciones
                         sea una obra maestra de ingeniería marítima.</p>
                 </div>
+                
+                <div class="contenedor-voyager">
+    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-UoyMuirbrs?si=vLZaDXS2W39DjLbO"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+                </div>
 
             </article>
 
@@ -458,13 +448,49 @@
     <!--Parte del footer que contiene las redes sociales, el maps con la ubicacion fisica de la empresa y el formularo-->
 
     <footer>
+        <!--seccion encargada de encapsular el formulario y el mapa-->
         <section class="contenedor-antibarra">
 
-            <article class="contenedor-formulario">
+            <!--seccion encargada de mostrar el formulario con el uso de article, divs, label y inputs-->
+            <section>
 
-            </article>
-            <article class="contenedor-redes">
+                <article class="contenedeor-formulario">
+                    <form action="#" method="post">
+                        <h2>Contactenos</h2>
+                        <div class="formulario">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" placeholder="nombre apellido" required>
+                            <label for="email">Correo:</label>
+                            <input type="email" placeholder="Correo" required>
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea name="mensaje" rows="5" placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="formula-txt">
+                            <a href="#">Politica de privacidad</a>
+                            <a href="#">Terminos y condiciones</a>
+                        </div>
+                        <input class="boton" type="submit" name="boton" id="boton" value="enviar">
+                    </form>
+                </article>
+            </section>
 
+            <!--seccion encargada de mostrar el mapa con la ubicacion de la empresa usando un iframe-->
+            <section class="contenedor-mapa">
+
+                <div id="mapa">
+                    <h3>Nuestra ubicación</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481.55466529780307!2d-75.5132304168147!3d10.383506375395282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef625c88e8197fb%3A0xd5b14a4baa12bb7b!2sOTM%20SAS!5e0!3m2!1ses!2sco!4v1712326500436!5m2!1ses!2sco"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+            </section>
+        </section>
+        <!--seccion que contiene las de redes y los derechos reservador de la empresa con el uso de articles, divs y anchores-->
+        <section class="contenedor-redes">
+            <article>
                 <div id="contacto">
 
                     <a href="#">facebook
@@ -491,12 +517,6 @@
 
                         <i class="bi bi-linkedin"></i>
                     </a>
-                </div>
-
-
-
-                <div>
-
                     <a href="">telefono
                         <i class="bi bi-telephone-outbound"></i>
                     </a>
@@ -516,24 +536,10 @@
                     </a>
 
                 </div>
-
-
-            </article>
-
-
-            <article class="mapa">
-
-                <div>
-
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481.55466529780307!2d-75.5132304168147!3d10.383506375395282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef625c88e8197fb%3A0xd5b14a4baa12bb7b!2sOTM%20SAS!5e0!3m2!1ses!2sco!4v1712326500436!5m2!1ses!2sco"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+                <div class="derechos">
+                    <p>&copy; Todos los derechos reservados.</p>
                 </div>
-
             </article>
-
         </section>
 
     </footer>

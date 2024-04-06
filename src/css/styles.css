@@ -41,15 +41,14 @@ main{
     border-bottom: 5px solid var(--borders);
 }
 hr{
-    height: 5px;
+    height: 7px;
     background-color: var(--hr);
 }
 /* id */
-#inicio{
-    height: 187vh;
-}
-#productos{
-    height: 187vh;
+#mercado{
+    height: 17vh;
+    font-size: 60px;
+    margin-top: 100px;
 }
 #veleros{
     height: 167vh;
@@ -62,9 +61,10 @@ hr{
 }
 #sobre-nosotros{
     height: 187vh;
+    margin-top: 115px;
 }
 #contacto{
-    height: 70vh;
+    margin-top:145px ;
 }
 /* Estilos del header */
 .contenedor-barra-total{
@@ -122,21 +122,9 @@ hr{
 }
 .barra-buscadora{
     font-size: 0px;
-    margin-right: 50px;
+    padding-left: 50px;
 }
 /* estilos del main */
-.menu-inicio{
-    border: 10px solid var(--borders);
-    align-items: center;
-    background-color: var(--antibarra);
-}
-.red-nosotros{
-    background-color: var(--paredFondo);
-}
-.menu-productos{
-    text-align: center;
-    font-size: 40px;
-}
 .contenedor-productos{
     display: flex;
     flex-direction: column;
@@ -145,11 +133,32 @@ hr{
     max-width:80% ;
     height: auto;
 }
+
 .contenedor-productos h3{
     text-align: center;
     font-size: 70px;
     margin-left: 400px;
     margin-bottom: 40px;
+}
+.mercado{
+    border-bottom: 7px solid var(--hr);
+    width: 100%;
+    
+}
+.mercado h2{
+    text-align: center;
+    font-size: 100px;
+}
+.menu-mercado{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-mercado a{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 30px;
 }
 .productos{
     margin-bottom: 0px;
@@ -206,4 +215,79 @@ hr{
 /* Footer */
 .contenedor-antibarra{
     background-color: var(--antibarra);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.contenedeor-formulario{
+    background-color: #ffff;
+    padding: 10px 10px;
+    margin: 10px;
+    height: 60vh;
+    width: 50vh;
+    border-radius: 20px;
+    
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+label{
+    color:var(--colortextfrom);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+input,textarea{
+    width:  452px;
+    padding: 17px 25px;
+    border-radius: 25px;
+    border: 2px solid var(--sombra);
+    margin-bottom: 20px;
+    background-color: var(--pared);
+    outline: none;
+}
+.formula-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.boton{
+    font-size: 16px;
+    color: var(--colortextfrom);
+    border: 0;
+    border-radius: 25px;
+    background-color: var(--pared);
+    box-shadow: var(--sombra);
+    cursor: pointer;
+}
+.contenedor-mapa{
+    width: 100%;
+}
+.contenedor-mapa h3{
+    font-size: 60px;
+    color: var(--textoNav);
+}
+.contenedor-redes{
+    background-color: var(--antibarra);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contenedor-redes a{
+    font-size: 30px;
+    color: var(--textoNav);
+    gap: 70%;
+}
+.contenedor-redes a :hover{
+    color: var(--color-ilumi);
+}
+.derechos p{
+    text-align: center;
+    margin-top: 60px;
+    color: var(--textoNav);
 }
